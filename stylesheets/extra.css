@@ -1,0 +1,233 @@
+/* AlphaForge Documentation Custom Styles */
+
+/* Performance metrics styling */
+.performance-metric {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.performance-exceeded {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.performance-target {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+}
+
+/* Code block enhancements */
+.highlight .hll { background-color: #404040 }
+.highlight .c { color: #999999; font-style: italic }
+.highlight .k { color: #6ab825; font-weight: bold }
+.highlight .n { color: #d0d0d0 }
+
+/* Benchmark result tables */
+table.benchmark-results {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.benchmark-results th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+table.benchmark-results td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+table.benchmark-results tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Status badges */
+.status-complete {
+    background: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-in-progress {
+    background: #ff9800;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Architecture diagrams */
+.architecture-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* API reference styling */
+.api-method {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.api-method h5 {
+    margin-top: 0;
+    color: #667eea;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.api-parameters {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.api-parameters code {
+    background: #e9ecef;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Performance callouts */
+.performance-callout {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.performance-callout.success {
+    background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+}
+
+.performance-callout.info {
+    background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);
+}
+
+/* Code syntax highlighting improvements */
+.highlight pre {
+    background: #263238;
+    color: #eeffff;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    line-height: 1.4;
+}
+
+.highlight .kt { color: #c792ea }
+.highlight .nb { color: #82b1ff }
+.highlight .s { color: #c3e88d }
+.highlight .mi { color: #f78c6c }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .performance-metric {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    table.benchmark-results {
+        font-size: 14px;
+    }
+    
+    table.benchmark-results th,
+    table.benchmark-results td {
+        padding: 8px 6px;
+    }
+}
+
+/* Navigation enhancements */
+.md-nav__title {
+    font-weight: 600;
+    color: #667eea;
+}
+
+.md-nav__link--active {
+    color: #667eea !important;
+    font-weight: 600;
+}
+
+/* Content improvements */
+.md-content h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.md-content h2 {
+    color: #34495e;
+    margin-top: 2em;
+}
+
+/* Admonition custom styles for AlphaForge */
+.md-typeset .admonition.performance {
+    border-color: #4caf50;
+}
+
+.md-typeset .admonition.performance > .admonition-title {
+    background-color: #4caf50;
+    color: white;
+}
+
+.md-typeset .admonition.performance > .admonition-title::before {
+    background-color: white;
+    -webkit-mask-image: var(--md-admonition-icon--tip);
+    mask-image: var(--md-admonition-icon--tip);
+}
+
+.md-typeset .admonition.benchmark {
+    border-color: #ff9800;
+}
+
+.md-typeset .admonition.benchmark > .admonition-title {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Footer styling */
+.md-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a6fd8;
+}

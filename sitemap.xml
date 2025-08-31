@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://alphaforge.dev/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/api/python-api/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/architecture/overview/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/examples/basic-strategy/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/getting-started/quick-start/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/reference/benchmarks/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://alphaforge.dev/reference/phase-reports/</loc>
+         <lastmod>2025-08-31</lastmod>
+    </url>
+</urlset>
