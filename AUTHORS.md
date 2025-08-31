@@ -93,10 +93,15 @@ SOFTWARE.
 
 For questions, issues, or contributions:
 
-- **GitHub**: [https://github.com/AlphaForge/alphaforge](https://github.com/AlphaForge/alphaforge)
-- **Documentation**: [https://alphaforge.dev](https://alphaforge.dev)
-- **Issues**: [GitHub Issues](https://github.com/AlphaForge/alphaforge/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/AlphaForge/alphaforge/discussions)
+### Authors
+- **Krishna Bajpai**: krishna@krishnabajpai.me
+- **Vedanshi Gupta**: vedanshigupta158@gmail.com
+
+### Project Resources
+- **GitHub**: [https://github.com/krish567366/AlphaForge](https://github.com/krish567366/AlphaForge)
+- **Documentation**: [README.md](README.md) and [docs/](docs/)
+- **Issues**: [GitHub Issues](https://github.com/krish567366/AlphaForge/issues)
+- **Usage Guide**: [HOW_TO_USE_ALPHAFORGE.md](HOW_TO_USE_ALPHAFORGE.md)
 
 ---
 
