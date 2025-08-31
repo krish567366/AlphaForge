@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build AlphaForge (Release)",
+			"type": "shell",
+			"command": "$env:PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1; cargo build --release --features python,extension-module",
+			"isBackground": false,
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Test AlphaForge",
+			"type": "shell",
+			"command": "$env:PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1; cargo test --all-features",
+			"isBackground": false,
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test"
+		}
+	]
+}

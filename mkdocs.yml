@@ -1,0 +1,182 @@
+# AlphaForge Documentation Configuration
+site_name: AlphaForge - High-Performance Algorithmic Trading Platform
+site_description: Production-ready algorithmic trading system built with Rust and Python
+site_author: Krishna Bajpai and Vedanshi Gupta
+site_url: https://alphaforge.dev
+
+# Repository
+repo_name: AlphaForge/alphaforge
+repo_url: https://github.com/AlphaForge/alphaforge
+edit_uri: edit/main/docs/
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: getting-started/quick-start.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - System Design: architecture/system-design.md
+    - Performance: architecture/performance.md
+    - Technology Stack: architecture/tech-stack.md
+  - Core Systems:
+    - Message Bus: core/message-bus.md
+    - Cache System: core/cache-system.md
+    - Time Management: core/time-management.md
+    - Data Structures: core/data-structures.md
+  - Trading Engine:
+    - Data Engine: trading/data-engine.md
+    - Execution Engine: trading/execution-engine.md
+    - Strategy Framework: trading/strategy-framework.md
+    - Risk Management: trading/risk-management.md
+    - Portfolio Management: trading/portfolio-management.md
+  - API Reference:
+    - Python API: api/python-api.md
+    - Rust Core: api/rust-core.md
+    - Message Types: api/message-types.md
+    - Configuration: api/configuration.md
+  - Examples:
+    - Basic Strategy: examples/basic-strategy.md
+    - Advanced Strategies: examples/advanced-strategies.md
+    - Backtesting: examples/backtesting.md
+    - Live Trading: examples/live-trading.md
+  - Development:
+    - Building: development/building.md
+    - Testing: development/testing.md
+    - Contributing: development/contributing.md
+    - Benchmarking: development/benchmarking.md
+  - Operations:
+    - Deployment: operations/deployment.md
+    - Monitoring: operations/monitoring.md
+    - Troubleshooting: operations/troubleshooting.md
+    - Maintenance: operations/maintenance.md
+  - Reference:
+    - Performance Benchmarks: reference/benchmarks.md
+    - Phase Reports: reference/phase-reports.md
+    - Changelog: reference/changelog.md
+    - FAQ: reference/faq.md
+
+# Theme configuration
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: AlphaForge
+      repo: alphaforge
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+# Extra
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AlphaForge/alphaforge
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/alphaforge/
+    - icon: fontawesome/brands/rust
+      link: https://crates.io/crates/alphaforge
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+# Copyright
+copyright: Copyright &copy; 2025 Krishna Bajpai and Vedanshi Gupta - AlphaForge Development Team
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
